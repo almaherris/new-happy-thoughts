@@ -8,7 +8,7 @@ export const App = () => {
   const [thoughts, setThoughts] = useState([])
 
   //Define API endpoints
-  const thoughtsURL = "https://happy-thoughts-ux7hkzgmwa-uc.a.run.app/thoughts"
+  const thoughtsURL = "https://alma-happy-thoughts-api.onrender.com/thoughts"
 
   //Function to fetch data from API
   const fetchHappyThoughts = () => {

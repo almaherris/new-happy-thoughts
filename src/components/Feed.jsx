@@ -9,10 +9,9 @@ export const Feed = ({ thoughts, fetchHappyThoughts }) => {
 
   const onLikeIncrease = (_id) => {
     // Send a request to the API to increase the hearts for the post with that ID
-    fetch(
-      `https://happy-thoughts-ux7hkzgmwa-uc.a.run.app/thoughts/${_id}/like`,
-      { method: "POST" }
-    )
+    fetch(`https://alma-happy-thoughts-api.onrender.com/thoughts/${_id}/like`, {
+      method: "POST",
+    })
       .then((response) => response.json())
       .then((data) => {
         //Update the local state to reflect the new like count
